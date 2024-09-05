@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    font-family: Times, Times New Roman, serif;
+    width: 100%;
+    background-color: rgb(52, 52, 37);
+    width: 100vw;
+    padding-left: 2rem;
+
+    color: rgb(255, 255, 245);
+}
+
+.page-header > p {
+    margin-top: -1rem;
+    padding-left: 2rem;
+}
+
+.nav-items {
+    background-color: rgb(108, 108, 77);
+    padding: 0 2rem 0 0;
+}
+
+.nav-items > ul {
+    height: 100%;
+    d
+}
+
+.nav-items > ul > li {
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+}
