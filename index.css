@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 html, body {
     margin: 0;
     padding: 0;
   }  
+
+* {
+    font-family: "Inter", sans-serif;
+}
 
 
 .page-header{
@@ -22,19 +27,89 @@ html, body {
 }
 
 .nav-items {
-    background-color: rgb(108, 108, 77);
+    
     padding: 0 2rem 0 0;
 }
 
 .nav-items > ul {
     height: 100%;
-    d
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.left-pfp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-pfp img{
+    max-width: 300px;
+    height: auto;
+    border-radius: 25px;
 }
 
 .nav-items > ul > li {
+    list-style: none;
+   
+}
+
+.nav-items > ul > li > a {
+
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    transition: 250ms;
+}
+
+.nav-items > ul > li > a:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav-items a {
     text-decoration: none;
+    color: black;
 }
 
 .content-container {
     display: flex;
+}
+
+.pic-text-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-caption {
+    margin-top: 2rem;
+}
+
+.welcome-container {
+    max-width: 700px;
+}
+
+.page-content {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
