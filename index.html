@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="age-modal-container">
+        <div id="age-modal-container">
             <div class="age-modal">
                 <h1 class="modal-title">
                     18+ Site
@@ -15,9 +15,11 @@
                 </p>
                 <div class="input-area">
                     <label for="fname">Age:</label>
-                    <input type="text" id="input" name="fname">
+                    <div class="input-box"> 
+                        <input type="text" id="input" name="fname">
+                        <div id="alt-output"></div>
+                    </div>
                     <button class="confirm-button" onclick="checkAge()">Confirm</button>
-                    <div></div>
                 </div>
             </div>
         </div>
@@ -69,5 +71,6 @@
             </div>
 
         </div>
+        <script src="resume.js"></script>
     </body>
 </html>

@@ -16,10 +16,11 @@ body {
     position: relative;
 }
 
-.age-modal-container {
+#age-modal-container {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(50px);
     position: absolute;
     top: 0;
     
@@ -28,6 +29,9 @@ body {
     align-items: center;
 
     z-index: 9999;
+    transition: 250ms;
+
+    opacity: 1;
 }
 
 .age-modal {
@@ -125,8 +129,8 @@ body {
 }
 
 .desc {
-    padding: 2rem;
-    padding-right: 4rem;
+    margin-top: 2rem;
+    padding: 1rem 4rem 1rem 2rem;
     background-color: rgb(215, 220, 215);
     border-radius: 12px;
 }
@@ -221,10 +225,17 @@ body {
 }
 
 .page-container {
-    filter: blur(30px);
+   
 }
 
 #input {
     border-radius: 12px;
     height: 2rem;
+}
+
+#alt-output {
+    margin-top: .25rem;
+    padding-left: .25rem;
+    color: red;
+    font-size: small;
 }
