@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="eng">
     <head>
+        <!-- Link to external CSS file for styling -->
         <link rel="stylesheet" href="../index.css">
     </head>
     <body>
+        <!-- Main container for the page layout -->
         <div class="page-container">
+            
+            <!-- Header section containing name and resume title -->
             <div class="page-header-container"> 
                 <div class="page-header">
                     <h1>Christian Rudder</h1>
@@ -13,8 +16,10 @@
                 </div>
             </div>
             
+            <!-- Content container including navigation and main content -->
             <div class="content-container">
                 
+                <!-- Navigation menu for desktop view -->
                 <nav class="nav-items">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
@@ -26,33 +31,41 @@
                     </ul>
                 </nav>
 
+                <!-- Main content area -->
                 <div class="page-content">
                     <div class="welcome-container">
+                        <!-- Table displaying employment history -->
                         <table>
                             <tr>
-                              <th>Employment</th>
-                              <th>Title</th>
+                                <!-- Table headers for employment and job titles -->
+                                <th>Employment</th>
+                                <th>Title</th>
                             </tr>
                             <tr>
-                              <td>Built Environment Plus</td>
-                              <td>Operations and Web Developer</td>
-                            
+                                <!-- Table row for Built Environment Plus with job title -->
+                                <td>Built Environment Plus</td>
+                                <td>Operations and Web Developer</td>
                             </tr>
                             <tr>
+                                <!-- Table row for Liberty Mutual with job title -->
                                 <td>Liberty Mutual</td>
                                 <td>Software Engineer</td>
                             </tr>
-                            <tr>  
-                              <td>Boston University</td>
-                              <td>Course Assistant CS112</td>
+                            <tr>
+                                <!-- Table row for Boston University with job title -->
+                                <td>Boston University</td>
+                                <td>Course Assistant CS112</td>
                             </tr>
-                          </table>
+                        </table>
                     </div>
                 </div>
                 
             </div>
+
+            <!-- Mobile navigation menu with collapsible functionality -->
             <nav class="nav-items mob" id="mob-nav">
                 <ul>
+                    <!-- Button to close the mobile navigation -->
                     <button class="nav-button" onclick="accordClose()"> v </button>
                     <li><a onclick="accordClose()" href="/index.html">Home</a></li>
                     <li><a onclick="accordClose()" href="/projects.html">Projects</a></li>
@@ -62,8 +75,12 @@
                     <li><a onclick="accordClose()" href="/documents.html">Documents</a></li>
                 </ul>
             </nav>
+
+            <!-- Button to open the mobile navigation -->
             <button id="mob-nav-open" class="nav-button" onclick="accordOpen()"> ^ </button>
         </div>
+
+        <!-- Link to external JavaScript file for mobile navigation functionality -->
         <script src="resume.js"></script>
     </body>
 </html>

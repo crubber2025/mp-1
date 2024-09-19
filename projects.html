@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="eng">
     <head>
+        <!-- Link to external CSS file for styling -->
         <link rel="stylesheet" href="../index.css">
     </head>
     <body>
+        <!-- Main container for the page layout -->
         <div class="page-container">
+            
+            <!-- Header section containing name and resume title -->
             <div class="page-header-container"> 
                 <div class="page-header">
                     <h1>Christian Rudder</h1>
@@ -13,8 +16,10 @@
                 </div>
             </div>
             
+            <!-- Content container including navigation and main content -->
             <div class="content-container">
                 
+                <!-- Desktop navigation menu -->
                 <nav class="nav-items desk">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
@@ -26,27 +31,35 @@
                     </ul>
                 </nav>
 
+                <!-- Main content area -->
                 <div class="page-content">
                     
                     <div class="welcome-container">
+                        
+                        <!-- Project section with external link to website -->
                         <div class="plug">
-                            <h1 >Projects:</h1>
+                            <h1>Projects:</h1>
                             <div class="cool-button">
-                                <a  href="https://christianrudder.me/" target="_blank">
+                                <a href="https://christianrudder.me/" target="_blank">
                                     My Website
                                 </a>
                             </div>
                         </div>
+
+                        <!-- Basic calculator with two number inputs and operation buttons -->
                         <div class="calculator">
                             <div class="number-inputs">
+                                <!-- Input for the first number -->
                                 <label>First Number: </label>
                                 <input type="number" id="f-number" /> 
                             </div>
                             <div class="number-inputs">
+                                <!-- Input for the second number -->
                                 <label>Second Number: </label>
                                 <input type="number" id="s-number" /> 
                             </div>
 
+                            <!-- Operation buttons for basic math (+, -, *, /, power, clear) -->
                             <div class="calc-options">
                                 <button class="operator" onclick="operation(b_add)">+</button>
                                 <button class="operator" onclick="operation(b_sub)">-</button>
@@ -56,6 +69,7 @@
                                 <button class="operator" onclick="operation(b_c)">C</button>
                             </div>
 
+                            <!-- Output field to display result -->
                             <div class="output">
                                 <p id="o-number">_</p>
                             </div>
@@ -65,10 +79,12 @@
                     </div>
                 </div>
                 
-                
             </div>
+
+            <!-- Mobile navigation menu with collapsible functionality -->
             <nav class="nav-items mob" id="mob-nav">
                 <ul>
+                    <!-- Button to close the mobile navigation -->
                     <button class="nav-button" onclick="accordClose()"> v </button>
                     <li><a onclick="accordClose()" href="/index.html">Home</a></li>
                     <li><a onclick="accordClose()" href="/projects.html">Projects</a></li>
@@ -78,9 +94,13 @@
                     <li><a onclick="accordClose()" href="/documents.html">Documents</a></li>
                 </ul>
             </nav>
+
+            <!-- Button to open the mobile navigation -->
             <button id="mob-nav-open" class="nav-button" onclick="accordOpen()"> ^ </button>
 
         </div>
+        
+        <!-- Link to external JavaScript file for functionality (including calculator operations) -->
         <script src="resume.js"></script>
     </body>
 </html>

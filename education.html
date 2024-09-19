@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="eng">
     <head>
+        <!-- Link to external CSS file for styling -->
         <link rel="stylesheet" href="../index.css">
     </head>
     <body>
+        <!-- Main container for the page layout -->
         <div class="page-container">
+            
+            <!-- Header section containing name and resume title -->
             <div class="page-header-container"> 
                 <div class="page-header">
                     <h1>Christian Rudder</h1>
@@ -13,8 +16,10 @@
                 </div>
             </div>
             
+            <!-- Content container including navigation and main content -->
             <div class="content-container">
                 
+                <!-- Navigation menu for desktop view -->
                 <nav class="nav-items">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
@@ -26,33 +31,41 @@
                     </ul>
                 </nav>
 
+                <!-- Main content area -->
                 <div class="page-content">
                     <div class="welcome-container">
+                        <!-- Table displaying schools and graduation dates -->
                         <table>
                             <tr>
-                              <th>School Name</th>
-                              <th>Graduation Date</th>
+                                <!-- Table headers for school name and graduation date -->
+                                <th>School Name</th>
+                                <th>Graduation Date</th>
                             </tr>
                             <tr>
-                              <td>Belmont High School</td>
-                              <td>2020</td>
-                            
+                                <!-- Table row for Belmont High School with graduation date -->
+                                <td>Belmont High School</td>
+                                <td>2020</td>
                             </tr>
                             <tr>
+                                <!-- Table row for Mass Bay Community College with transfer year -->
                                 <td>Mass Bay Community College</td>
                                 <td>Transfer 2022</td>
                             </tr>
-                            <tr>  
-                              <td>Boston University</td>
-                              <td>Present</td>
+                            <tr>
+                                <!-- Table row for current enrollment at Boston University -->
+                                <td>Boston University</td>
+                                <td>Present</td>
                             </tr>
-                          </table>
+                        </table>
                     </div>
                 </div>
                 
             </div>
+
+            <!-- Mobile navigation menu with collapsible functionality -->
             <nav class="nav-items mob" id="mob-nav">
                 <ul>
+                    <!-- Button to close the mobile navigation -->
                     <button class="nav-button" onclick="accordClose()"> v </button>
                     <li><a onclick="accordClose()" href="/index.html">Home</a></li>
                     <li><a onclick="accordClose()" href="/projects.html">Projects</a></li>
@@ -62,8 +75,12 @@
                     <li><a onclick="accordClose()" href="/documents.html">Documents</a></li>
                 </ul>
             </nav>
+
+            <!-- Button to open the mobile navigation -->
             <button id="mob-nav-open" class="nav-button" onclick="accordOpen()"> ^ </button>
         </div>
+
+        <!-- Link to external JavaScript file for mobile navigation functionality -->
         <script src="resume.js"></script>
     </body>
 </html>

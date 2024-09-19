@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="eng">
     <head>
+        <!-- Link to external CSS file -->
         <link rel="stylesheet" href="../index.css">
     </head>
     <body>
+        <!-- Main page container -->
         <div class="page-container">
+            
+            <!-- Header section containing name and resume info -->
             <div class="page-header-container"> 
                 <div class="page-header">
                     <h1>Christian Rudder</h1>
@@ -13,8 +16,10 @@
                 </div>
             </div>
             
+            <!-- Content container for navigation and main content -->
             <div class="content-container">
                 
+                <!-- Navigation menu for desktop view -->
                 <nav class="nav-items">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
@@ -26,30 +31,35 @@
                     </ul>
                 </nav>
 
+                <!-- Main content area with achievements table -->
                 <div class="page-content">
                     <div class="welcome-container">
                         <table>
                             <tr>
-                              <th>Achievement</th>
-                              <th>Origin</th>
+                                <!-- Table headers for achievements and their origin -->
+                                <th>Achievement</th>
+                                <th>Origin</th>
                             </tr>
                             <tr>
-                              <td>Phi Theta Kappa Honors Society</td>
-                              <td>MASS BAY</td>
-                            
+                                <!-- Table row with an achievement and its source -->
+                                <td>Phi Theta Kappa Honors Society</td>
+                                <td>MASS BAY</td>
                             </tr>
                             <tr>
-                              <td>Deans List</td>
-                              <td>MASS BAY</td>
-                              
+                                <!-- Another table row with an achievement and its source -->
+                                <td>Deans List</td>
+                                <td>MASS BAY</td>
                             </tr>
-                          </table>
+                        </table>
                     </div>
                 </div>
                 
             </div>
+
+            <!-- Mobile navigation menu with collapsible functionality -->
             <nav class="nav-items mob" id="mob-nav">
                 <ul>
+                    <!-- Button to close the mobile navigation -->
                     <button class="nav-button" onclick="accordClose()"> v </button>
                     <li><a onclick="accordClose()" href="/index.html">Home</a></li>
                     <li><a onclick="accordClose()" href="/projects.html">Projects</a></li>
@@ -59,8 +69,12 @@
                     <li><a onclick="accordClose()" href="/documents.html">Documents</a></li>
                 </ul>
             </nav>
+
+            <!-- Button to open the mobile navigation -->
             <button id="mob-nav-open" class="nav-button" onclick="accordOpen()"> ^ </button>
         </div>
+
+        <!-- Link to external JavaScript file for navigation functionality -->
         <script src="resume.js"></script>
     </body>
 </html>
