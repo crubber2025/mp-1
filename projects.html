@@ -15,7 +15,7 @@
             
             <div class="content-container">
                 
-                <nav class="nav-items">
+                <nav class="nav-items desk">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="/projects.html">Projects</a></li>
@@ -29,16 +29,56 @@
                 <div class="page-content">
                     
                     <div class="welcome-container">
-                        <h1 >Projects:</h1>
-                        <div class="cool-button">
-                            <a  href="https://christianrudder.me/" target="_blank">
-                                My Website
-                            </a>
+                        <div class="plug">
+                            <h1 >Projects:</h1>
+                            <div class="cool-button">
+                                <a  href="https://christianrudder.me/" target="_blank">
+                                    My Website
+                                </a>
+                            </div>
                         </div>
+                        <div class="calculator">
+                            <div class="number-inputs">
+                                <label>First Number: </label>
+                                <input type="number" id="f-number" /> 
+                            </div>
+                            <div class="number-inputs">
+                                <label>Second Number: </label>
+                                <input type="number" id="s-number" /> 
+                            </div>
+
+                            <div class="calc-options">
+                                <button class="operator" onclick="operation(b_add)">+</button>
+                                <button class="operator" onclick="operation(b_sub)">-</button>
+                                <button class="operator" onclick="operation(b_mul)">*</button>
+                                <button class="operator" onclick="operation(b_div)">/</button>
+                                <button class="operator" onclick="operation(b_pow)">**</button>
+                                <button class="operator" onclick="operation(b_c)">C</button>
+                            </div>
+
+                            <div class="output">
+                                <p id="o-number">_</p>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
                 
+                
             </div>
+            <nav class="nav-items mob" id="mob-nav">
+                <ul>
+                    <button class="nav-button" onclick="accordClose()"> v </button>
+                    <li><a onclick="accordClose()" href="/index.html">Home</a></li>
+                    <li><a onclick="accordClose()" href="/projects.html">Projects</a></li>
+                    <li><a onclick="accordClose()" href="/education.html">Education</a></li>
+                    <li><a onclick="accordClose()" href="/employment.html">Employment</a></li>
+                    <li><a onclick="accordClose()" href="/achievements.html">Achievements</a></li>
+                    <li><a onclick="accordClose()" href="/documents.html">Documents</a></li>
+                </ul>
+            </nav>
+            <button id="mob-nav-open" class="nav-button" onclick="accordOpen()"> ^ </button>
 
         </div>
         <script src="resume.js"></script>
