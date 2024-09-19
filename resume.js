@@ -23,6 +23,7 @@ function checkAge() {
 
     else if(Number(age) >= 18 && Number(age)<=120) {
         modal.style.opacity = "0";
+        modal.style.pointerEvents = "none";
     }
 
     else {
